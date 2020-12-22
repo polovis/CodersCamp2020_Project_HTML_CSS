@@ -1,0 +1,76 @@
+@import "../variables.css";
+
+.dataWrapper {
+  display: flex;
+  position: absolute;
+  top: 10rem;
+}
+
+.dataWrapper .dataBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3 1 auto;
+}
+
+.dataBoxWrapper p {
+  color: var(--secondary-font-color);
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.personalDataDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personalDataDetails li {
+  display: flex;
+
+  list-style: none;
+  width: 48%;
+  color: var(--secondary-font-color);
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.personalDataDetails li span {
+  padding-right: 1rem;
+  color: var(--highlight-font-color);
+}
+
+.personalDataDetails li p,
+.personalDataDetails li span {
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dataWrapper .logo {
+  flex: 1 1 auto;
+  position: relative;
+  width: 20rem;
+  height: 10rem;
+  background-size: 100%;
+  top: -1rem;
+  z-index: 999;
+}
+
+@media (max-width: 1024px) {
+  .personalDataDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personalDataDetails li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dataBoxWrapper p,
+  .personalDataDetails li p,
+  .personalDataDetails li span {
+    text-align: center;
+  }
+}

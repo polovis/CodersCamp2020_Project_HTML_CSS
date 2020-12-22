@@ -1,0 +1,39 @@
+@import "../variables.css";
+
+.workshopDataDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workshopDataDetails li {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  color: var(--secondary-font-color);
+}
+
+.workshopDataDetails li p,
+.workshopDataDetails li span {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workshopDataDetails li span {
+  color: var(--highlight-font-color);
+  padding-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .workshopDataDetails li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dataBoxWrapper p,
+  .workshopDataDetails li p,
+  .workshopDataDetails li span {
+    text-align: center;
+  }
+}

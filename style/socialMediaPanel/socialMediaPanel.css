@@ -1,0 +1,43 @@
+@import "../variables.css";
+
+.socialMediaPanel {
+  flex: 1 3 auto;
+  position: relative;
+}
+
+.label {
+  font-size: 1rem;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  color: var(--primary-font-color);
+}
+
+.verticalLine {
+  height: 4rem;
+  margin-top: 2.5rem;
+  width: 1px;
+  border-right: 1px solid var(--primary-font-color);
+}
+
+.socialIconContainer {
+  position: fixed;
+  right: 0;
+  top: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socialIconWrapper {
+  padding: 0.5rem;
+}
+
+.fa,
+.fab {
+  color: var(--main-border-color);
+}
+
+.fa:hover,
+.fab:hover {
+  color: var(--highlight-font-color);
+}

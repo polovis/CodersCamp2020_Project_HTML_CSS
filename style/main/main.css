@@ -1,0 +1,163 @@
+@import "../variables.css";
+
+main {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5 1 auto;
+  position: relative;
+}
+
+.h-container {
+  color: var(--secondary-font-color);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30rem;
+  left: -8rem;
+  z-index: 999;
+  display: flex;
+}
+
+.h-container span {
+  color: var(--highlight-font-color);
+}
+
+.contentContainer {
+  width: 100%;
+  position: absolute;
+  top: 40rem;
+  z-index: 998;
+}
+
+.contentBoxWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.item {
+  width: 50%;
+  background-color: var(--background-color);
+}
+
+.item .contentBox {
+  border: 1px solid var(--main-border-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 12rem;
+}
+
+.item.leftBox {
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item.rightBox {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.emptyBox {
+  height: 4rem;
+  width: 75%;
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+}
+
+/* style for icons  */
+.fa {
+  color: var(--highlight-font-color);
+}
+
+.title {
+  color: var(--highlight-font-color);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.text {
+  color: var(--primary-font-color);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+/* style for tile links */
+.tileLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* Style for form */
+.newsletterForm {
+  background-color: var(--background-color);
+  border-bottom-color: var(--main-border-color);
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  caret-color: var(--main-border-color);
+  color: var(--main-border-color);
+}
+
+.newsletterForm:focus {
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  .h-container {
+    left: 0;
+    font-size: 1rem;
+  }
+
+  .container {
+    flex: 8 1 auto;
+  }
+
+  .contentBoxWrapper {
+    margin-bottom: 0;
+  }
+
+  .contentBoxWrapper .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .item.leftBox {
+    padding-right: 0;
+  }
+
+  .item.rightBox {
+    padding-left: 0;
+  }
+
+  .contentBox {
+    align-items: center;
+  }
+
+  .newsletterForm {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    top: 10rem;
+  }
+}
