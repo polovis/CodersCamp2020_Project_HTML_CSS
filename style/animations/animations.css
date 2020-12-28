@@ -1,0 +1,164 @@
+@import "./variables.css";
+
+.h-container {
+  color: var(--secondary-font-color);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 27rem;
+  left: -8rem;
+  z-index: 1000;
+  display: flex;
+}
+
+/* Animation on homepage */
+
+#flip {
+  height: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: flex;
+}
+
+#flip > div {
+  color: var(--highlight-font-color);
+  display: inline-block;
+  position: absolute;
+}
+
+#flip div:first-child {
+  animation: show-first 20s linear;
+  animation-iteration-count: infinite;
+}
+
+#flip div:nth-child(2) {
+  animation: show-second 20s linear;
+  animation-iteration-count: infinite;
+}
+
+#flip div:nth-child(3) {
+  animation: show-third 20s linear;
+  animation-iteration-count: infinite;
+}
+
+#flip div:nth-child(4) {
+  animation: show-fourth 20s linear;
+  animation-iteration-count: infinite;
+}
+
+#flip div:nth-child(5) {
+  animation: show-fifth 20s linear;
+  animation-iteration-count: infinite;
+}
+
+#flip div:nth-child(6) {
+  animation: show-sixth 20s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes show-first {
+  0% {
+    color: transparent;
+  }
+  8.33% {
+    color: var(--highlight-font-color);
+  }
+  16.66% {
+    color: transparent;
+  }
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes show-second {
+  0%,
+  16.66% {
+    color: transparent;
+  }
+
+  24.99% {
+    color: var(--highlight-font-color);
+  }
+
+  33.32%,
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes show-third {
+  0%,
+  33.32% {
+    color: transparent;
+  }
+
+  41.65% {
+    color: var(--highlight-font-color);
+  }
+
+  49.99%,
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes show-fourth {
+  0%,
+  49.99% {
+    color: transparent;
+  }
+
+  58.32% {
+    color: var(--highlight-font-color);
+  }
+
+  66.66%,
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes show-fifth {
+  0%,
+  66.66% {
+    color: transparent;
+  }
+
+  75% {
+    color: var(--highlight-font-color);
+  }
+
+  83.33%,
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes show-sixth {
+  0%,
+  83.33% {
+    color: transparent;
+  }
+
+  91.66% {
+    color: var(--highlight-font-color);
+  }
+
+  100% {
+    color: transparent;
+  }
+}
+
+@media (max-width: 1024px) {
+  .h-container {
+    top: 0.5rem;
+    left: 50%;
+  }
+  #flip {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+}

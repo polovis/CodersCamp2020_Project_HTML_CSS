@@ -5,6 +5,7 @@
 @import "./main/media.css";
 @import "./personalInfoPanel/personalInfoPanel.css";
 @import "./socialMediaPanel/socialMediaPanel.css";
+@import "./animations/animations.css";
 
 html {
   /* font-size: 16px; */
@@ -21,82 +22,4 @@ html {
 body {
   background-color: var(--background-color);
   position: relative;
-}
-
-#flip {
-  height: 2rem;
-  text-align: center;
-  overflow: hidden;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0.5rem;
-}
-
-#flip > div {
-  color: var(--highlight-font-color);
-  display: inline-block;
-}
-
-#flip div:first-child {
-  animation: show 7s linear 1 forwards;
-  margin-top: 0px;
-}
-
-@keyframes show {
-  0% {
-    margin-top: 0px;
-  }
-  1% {
-    margin-top: -400px;
-  }
-  15% {
-    margin-top: -360px;
-  }
-  33% {
-    margin-top: -260px;
-  }
-  48% {
-    margin-top: -150px;
-  }
-  55% {
-    margin-top: -100px;
-  }
-  61% {
-    margin-top: -50px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: 0px;
-  }
-
-  /* 0% {
-    margin-top: 0px;
-  }
-  1% {
-    margin-top: 0px;
-  }
-  15% {
-    margin-top: -50px;
-  }
-  33% {
-    margin-top: -100px;
-  }
-  48% {
-    margin-top: -150px;
-  }
-  55% {
-    margin-top: -260px;
-  }
-  61% {
-    margin-top: -360px;
-  }
-  71% {
-    margin-top: 400px;
-  }
-  100% {
-    margin-top: 0px;
-  } */
 }

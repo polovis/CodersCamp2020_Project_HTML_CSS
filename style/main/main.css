@@ -12,20 +12,6 @@ main {
   position: relative;
 }
 
-.h-container {
-  color: var(--secondary-font-color);
-  font-size: 1.5rem;
-  position: absolute;
-  top: 30rem;
-  left: -8rem;
-  z-index: 999;
-  display: flex;
-}
-
-.h-container span {
-  color: var(--highlight-font-color);
-}
-
 .contentContainer {
   width: 100%;
   position: absolute;
@@ -120,11 +106,6 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .h-container {
-    left: 0;
-    font-size: 1rem;
-  }
-
   .container {
     flex: 8 1 auto;
   }
